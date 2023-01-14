@@ -1,9 +1,136 @@
 /* google font */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+:root {
+  --black: #131313;
+  --btn-background: #ff900e;
+}
+.container {
+  width: 1174px;
+  margin: auto;
+}
+
+/* -------------------------
+ header styles 
+-------------------------*/
+.header {
+  background: rgba(255, 144, 14, 0.1);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 38px 0px 80px 0px;
+}
+.logo {
+  font-weight: 700;
+  font-size: 29px;
+  color: var(--black);
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu li {
+  list-style-type: none;
+  margin-left: 31px;
+}
+.menu li a {
+  text-decoration: none;
+  color: #424242;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+
+/* -------------------------
+ banner section styles 
+-------------------------*/
+.banner-top-text {
+  width: 804px;
+  margin: auto;
+  text-align: center;
+}
+.banner-title {
+  font-size: 42px;
+  line-height: 50px;
+  color: var(--black);
+  margin-bottom: 0.4em;
+}
+.banner-description {
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  margin-bottom: 25px;
+}
+.banner-btn {
+  margin-bottom: 35px;
+  background-color: var(--btn-background);
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  padding: 14px 20px;
+  cursor: pointer;
+}
+.banner-img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+
+/* -------------------------
+Responsive Mobile device 
+ -------------------------*/
+@media only screen and (max-width: 576px) {
+  /* header section */
+  .container {
+    width: 85%;
+  }
+  .navbar,
+  .menu {
+    flex-direction: column;
+  }
+  .menu li {
+    margin-top: 2em;
+  }
+  .logo {
+    font-size: 1.5em;
+  }
+
+  /* banner section */
+  .banner-top-text {
+    width: 100%;
+  }
+  .banner-title {
+    font-size: 1.8em;
+    line-height: 42px;
+  }
+}
+
+
+/* ------------------------- 
+Responsive Tablet device 
+ -------------------------*/
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  /* header section */
+  .container {
+    width: 85%;
+  }
+  .logo {
+    font-size: 1.4em;
+  }
+  .menu li {
+    margin-left: 15px;
+  }
+
+  /* banner section */
+  .banner-top-text {
+    width: 100%;
+  }
 }
