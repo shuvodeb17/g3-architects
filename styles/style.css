@@ -48,7 +48,6 @@
   font-size: 17px;
 }
 
-
 /* -------------------------
  banner section styles 
 -------------------------*/
@@ -69,7 +68,7 @@
   color: #727272;
   margin-bottom: 25px;
 }
-.banner-btn {
+.explore-btn {
   margin-bottom: 35px;
   background-color: var(--btn-background);
   border: none;
@@ -83,6 +82,44 @@
   margin-bottom: 40px;
 }
 
+/* our features section styles */
+.our-features-wrapper {
+  margin-top: 59px;
+  margin-bottom: 130px;
+}
+.our-features {
+  display: flex;
+  gap: 73px;
+  align-items: center;
+}
+.our-features-left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.our-features-left img {
+  width: 310px;
+}
+.features-title {
+  font-weight: 500;
+  font-size: 36px;
+  font-weight: 700;
+}
+.features-title .title-grey {
+  color: #727272;
+  font-weight: 500;
+}
+.features-title .title-orange {
+  color: #ff900e;
+}
+.features-description {
+  color: #727272;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
 
 /* -------------------------
 Responsive Mobile device 
@@ -111,8 +148,18 @@ Responsive Mobile device
     font-size: 1.8em;
     line-height: 42px;
   }
-}
 
+  /* our features section */
+  .our-features {
+    flex-direction: column;
+  }
+  .our-features-left {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .our-features-left img {
+    width: 100%;
+  }
+}
 
 /* ------------------------- 
 Responsive Tablet device 
@@ -131,6 +178,14 @@ Responsive Tablet device
 
   /* banner section */
   .banner-top-text {
+    width: 100%;
+  }
+
+  /* our features section */
+  .our-features {
+    flex-direction: column;
+  }
+  .our-features-left img {
     width: 100%;
   }
 }
