@@ -242,6 +242,38 @@
   font-size: 16px;
 }
 
+/* our sponsor section style */
+.our-sponsor-top {
+  text-align: center;
+}
+.our-sponsor-top h1 {
+  color: #131313;
+  font-size: 35px;
+  margin-bottom: 24px;
+}
+.our-sponsor-top p {
+  width: 53%;
+  margin: auto;
+  color: #727272;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 50px;
+}
+.our-sponsor-all-logo {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 130px;
+}
+.our-sponsor-all-logo img {
+  filter: grayscale(1);
+  width: 125.76px;
+}
+
+
+
+
 /* -------------------------
 Responsive Mobile device 
  -------------------------*/
@@ -301,8 +333,6 @@ Responsive Mobile device
     font-size: 2.4em;
   }
 
-
-
   /* .Some facts section */
   .some-facts-top {
     width: 100%;
@@ -321,7 +351,17 @@ Responsive Mobile device
     width: 80%;
     padding: 20px 18px;
   }
+
+  /* our sponsor section style */
+  .our-sponsor-top p {
+    width: 100%;
+  }
+  .our-sponsor-all-logo {
+    flex-direction: column;
+    gap: 24px;
+  }
 }
+
 
 
 
@@ -386,5 +426,17 @@ Responsive Tablet device
   .some-fact-card {
     margin: auto;
     width: 100%;
+  }
+
+  /* our sponsor section style */
+  .our-sponsor-top p {
+    width: 100%;
+  }
+  .our-sponsor-all-logo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 16px;
   }
 }
