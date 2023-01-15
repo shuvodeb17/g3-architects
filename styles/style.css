@@ -121,6 +121,68 @@
   margin-bottom: 32px;
 }
 
+/* Features you will love section */
+.features-love {
+  display: flex;
+  align-items: center;
+  gap: 103px;
+}
+.features-love-title {
+  border-left: 6px solid #ff900e;
+  height: 85px;
+}
+.features-love-title h1 {
+  font-size: 32px;
+  margin-left: 11px;
+}
+.features-love-description {
+  margin-top: 2%;
+  color: #727272;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.features-love-card {
+  box-shadow: 2px 2px 5px #ddd, -2px -2px 5px #ddd;
+  padding: 16px 30px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+.features-love-card h3 {
+  color: #131313;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.features-love-card p {
+  color: #727272;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+.features-love-right img {
+  width: 500px;
+  height: 731px;
+}
+.image-btn {
+  background-color: var(--btn-background);
+  width: 251px;
+  padding: 26px;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+  top: -67px;
+  left: -74px;
+}
+.image-btn h1 {
+  font-size: 46px;
+}
+.image-btn p {
+  font-size: 16px;
+}
+
 /* -------------------------
 Responsive Mobile device 
  -------------------------*/
@@ -159,6 +221,26 @@ Responsive Mobile device
   .our-features-left img {
     width: 100%;
   }
+
+  /* Features you will love section */
+  .features-love {
+    flex-direction: column;
+  }
+  .features-love-right {
+    margin-top: -86px;
+  }
+  .features-love-right img {
+    width: 100%;
+    height: 100%;
+  }
+  .image-btn {
+    position: inherit;
+    width: 100%;
+    padding: 10px;
+  }
+  .image-btn h1 {
+    font-size: 2.4em;
+  }
 }
 
 /* ------------------------- 
@@ -187,5 +269,25 @@ Responsive Tablet device
   }
   .our-features-left img {
     width: 100%;
+  }
+
+  /* Features you will love section */
+  .features-love {
+    flex-direction: column;
+  }
+  .features-love-right {
+    margin-top: -86px;
+  }
+  .features-love-right img {
+    width: 100%;
+    height: 100%;
+  }
+  .image-btn {
+    position: inherit;
+    width: 100%;
+    padding: 10px;
+  }
+  .image-btn h1 {
+    font-size: 2.4em;
   }
 }
