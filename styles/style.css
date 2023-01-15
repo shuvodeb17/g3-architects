@@ -242,6 +242,52 @@
   font-size: 16px;
 }
 
+/* Customer review styles */
+.customers-review-wrapper {
+  margin-bottom: 90px;
+}
+.customer-review-title {
+  text-align: center;
+  margin-bottom: 41px;
+  font-size: 32px;
+  color: #131313;
+}
+.customer-review-all-cards {
+  display: flex;
+  gap: 52px;
+}
+.customer-review-info {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 32px 14px;
+  width: 374px;
+}
+.customer-review-info img {
+  width: 120px;
+  height: 110px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  margin-bottom: 14px;
+}
+.customer-review-info h1 {
+  margin-bottom: 13px;
+}
+.customer-review-info p {
+  color: #727272;
+  font-size: 16px;
+  line-height: 26px;
+}
+.review-star {
+  margin-top: 13px;
+}
+.review-star .full-star {
+  color: #fb8200;
+}
+.review-star .half-star {
+  color: #fb8200;
+}
+
 /* our sponsor section style */
 .our-sponsor-top {
   text-align: center;
@@ -272,24 +318,26 @@
 }
 
 /* footer section styles */
-.footer{
-    background: #FFF4E7;
-    border-radius: 8px;
-    width: 100%;
-    height: 100px;
-    margin-bottom: 78px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    line-height: 25px;
+.footer {
+  background: #fff4e7;
+  border-radius: 8px;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 78px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 25px;
 }
-.footer p{
-    color: #424242;
-    font-weight: 400;
-    font-size: 18px;
+.footer p {
+  color: #424242;
+  font-weight: 400;
+  font-size: 18px;
 }
+
+
 
 
 
@@ -372,6 +420,16 @@ Responsive Mobile device
     padding: 20px 18px;
   }
 
+  /* Customer review styles */
+  .customer-review-all-cards {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .customer-review-info {
+    width: 85%;
+  }
+
   /* our sponsor section style */
   .our-sponsor-top p {
     width: 100%;
@@ -447,6 +505,16 @@ Responsive Tablet device
     margin: auto;
     width: 100%;
   }
+
+  /* Customer review styles */
+  .customer-review-all-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .customer-review-info {
+    width: 100%;
+}
 
   /* our sponsor section style */
   .our-sponsor-top p {
