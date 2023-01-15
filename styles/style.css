@@ -183,6 +183,65 @@
   font-size: 16px;
 }
 
+/* Some facts section */
+.some-facts-wrapper {
+  margin-top: 98px;
+  margin-bottom: 180px;
+}
+.some-facts-top {
+  width: 500px;
+  margin-bottom: 70px;
+}
+.some-facts-title {
+  font-size: 36px;
+  margin-bottom: 19px;
+  color: #131313;
+}
+.some-facts-description {
+  color: #727272;
+  font-size: 16px;
+  line-height: 26px;
+}
+.some-facts-cards-wrapper {
+  display: flex;
+  gap: 133px;
+}
+.some-fact-card {
+  width: 241.83px;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  text-align: center;
+  padding: 24px 0px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.some-fact-card:hover {
+  background-color: #ddd;
+  transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+}
+.some-fact-card img {
+  margin-bottom: 10px;
+  width: 34px;
+}
+.some-fact-card h1 {
+  margin-bottom: 5px;
+  color: #424242;
+  font-weight: 600;
+  font-size: 1.8em;
+}
+.some-fact-card p {
+  color: #727272;
+  font-size: 16px;
+}
+
 /* -------------------------
 Responsive Mobile device 
  -------------------------*/
@@ -241,7 +300,30 @@ Responsive Mobile device
   .image-btn h1 {
     font-size: 2.4em;
   }
+
+
+
+  /* .Some facts section */
+  .some-facts-top {
+    width: 100%;
+    margin-bottom: 49px;
+  }
+  .some-facts-wrapper {
+    margin-top: 108px;
+    text-align: center;
+  }
+  .some-facts-cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 58px;
+  }
+  .some-fact-card {
+    width: 80%;
+    padding: 20px 18px;
+  }
 }
+
+
 
 /* ------------------------- 
 Responsive Tablet device 
@@ -289,5 +371,20 @@ Responsive Tablet device
   }
   .image-btn h1 {
     font-size: 2.4em;
+  }
+
+  /* .Some facts section */
+  .some-facts-top {
+    width: 82%;
+  }
+  .some-facts-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 37px;
+    grid-row-gap: 33px;
+  }
+  .some-fact-card {
+    margin: auto;
+    width: 100%;
   }
 }
